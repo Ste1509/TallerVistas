@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioVehiculo">
+
+    <EditText
+        android:id="@+id/etSeat"
+        android:layout_width="122dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSysNavigation" />
+
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Asientos"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLeather"
+        app:layout_constraintStart_toStartOf="@+id/etSeat"
+        app:layout_constraintTop_toTopOf="@+id/tvLeather"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etSysNavigation"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginBottom="114dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/etSeat"
+        app:layout_constraintStart_toStartOf="@+id/tvSysNavigation"
+        app:layout_constraintTop_toTopOf="@+id/tvRadiator" />
+
+    <TextView
+        android:id="@+id/tvSysNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:text="Sistema de Navegación"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSlidingRoof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSlidingRoof" />
+
+    <EditText
+        android:id="@+id/etRadiator"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="85dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/etSysNavigation"
+        app:layout_constraintEnd_toEndOf="@+id/etSysNavigation"
+        app:layout_constraintStart_toStartOf="@+id/tvRadiator"
+        app:layout_constraintTop_toTopOf="@+id/etFuses" />
+
+    <TextView
+        android:id="@+id/tvRadiator"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="22dp"
+        android:text="Radiador"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvSysNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/etFuses" />
+
+    <EditText
+        android:id="@+id/etFuses"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etRadiator"
+        app:layout_constraintStart_toStartOf="@+id/tvFuses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFuses"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="85dp"
+        android:text="Fusibles"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRadiator"
+        app:layout_constraintStart_toStartOf="@+id/tvRadiator"
+        app:layout_constraintTop_toTopOf="@+id/tvMotor" />
+
+    <EditText
+        android:id="@+id/etMotor"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginBottom="209dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvSysNavigation"
+        app:layout_constraintEnd_toEndOf="@+id/etFuses"
+        app:layout_constraintStart_toStartOf="@+id/tvMotor"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="128dp"
+        android:text="Motor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etFuses"
+        app:layout_constraintStart_toStartOf="@+id/tvFuses" />
+
+    <EditText
+        android:id="@+id/etLeather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/etSeat"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/tvLeather"
+        app:layout_constraintTop_toTopOf="@+id/etSeat" />
+
+    <TextView
+        android:id="@+id/tvLeather"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="144dp"
+        android:text="Control cuero"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlternator" />
+
+    <EditText
+        android:id="@+id/etSlidingRoof"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/etSysNavigation"
+        app:layout_constraintEnd_toEndOf="@+id/etLeather"
+        app:layout_constraintStart_toStartOf="@+id/tvSlidingRoof"
+        app:layout_constraintTop_toTopOf="@+id/etSysNavigation" />
+
+    <TextView
+        android:id="@+id/tvSlidingRoof"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="86dp"
+        android:text="Techo corredizo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etLeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAlternator" />
+
+    <EditText
+        android:id="@+id/etColorV"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etAlternator"
+        app:layout_constraintStart_toStartOf="@+id/tvColorV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvColorV"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="85dp"
+        android:text="Color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAlternator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvType" />
+
+    <EditText
+        android:id="@+id/etAlternator"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="85dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/etSlidingRoof"
+        app:layout_constraintEnd_toEndOf="@+id/etSlidingRoof"
+        app:layout_constraintStart_toStartOf="@+id/tvAlternator"
+        app:layout_constraintTop_toTopOf="@+id/etColorV" />
+
+    <TextView
+        android:id="@+id/tvAlternator"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:text="Alternador"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRadiator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvRadiator" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMotor"
+        app:layout_constraintEnd_toEndOf="@+id/tvMotor"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/etMotor"
+        app:layout_constraintEnd_toEndOf="@+id/etColorV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvType"
+        app:layout_constraintTop_toTopOf="@+id/etMotor"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:text="Tipo"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:text="V E H I C U L O "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TallerVistaProducto</string>
+    <string name="etNombres">Nombres</string>
+    <string name="etApellidos">Apellidos</string>
+    <string name="etEdad">Edad</string>
+    <string name="etDireccion">Dirección</string>
+    <string name="etPeso">Peso</string>
+    <string name="etNombres1">Nombre</string>
+    <string name="etApellidos1">Apellidos</string>
+    <string name="etEdad1">Edad</string>
+    <string name="etDireccion1">Dirección</string>
+    <string name="etPeso1">Peso</string>
+    <string name="btnGuardar"></string>
+
+</resources>

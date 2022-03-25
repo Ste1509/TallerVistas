@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:text="@string/etNombres1"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="79dp"
+        android:layout_height="33dp"
+        android:text="@string/etApellidos1"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información Persona"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:text="@string/etEdad1"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="82dp"
+        android:layout_height="33dp"
+        android:hint="@string/etDireccion1"
+        android:text="@string/etDireccion1"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:text="@string/etPeso1"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="259dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

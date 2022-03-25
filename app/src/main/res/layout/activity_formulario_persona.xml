@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="person" type="com.example.tallervistaproducto.Person" ></variable>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioPersona">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurnames"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvSurnames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Apellidos"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etSurnames"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dirección"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etAddress"
+        app:layout_constraintTop_toBottomOf="@+id/etNames"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etNames"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="@string/etNombres"
+        android:inputType="textPersonName"
+        android:text="@{person.names}"
+        android:layout_marginStart="@dimen/margin_strat"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNames"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Nombres"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etNames"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etSurnames"
+        android:layout_width="149dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginBottom="509dp"
+        android:ems="10"
+        android:hint="@string/etApellidos"
+        android:inputType="textPersonName"
+        android:text="@{person.surNames}"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="@string/etEdad"
+        android:inputType="textPersonName"
+        android:layout_marginStart="@dimen/margin_strat"
+        android:text="@{person.age}"
+        app:layout_constraintBottom_toBottomOf="@+id/etAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etAddress"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="@dimen/margin_strat"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="@string/etPeso"
+        android:inputType="textPersonName"
+        android:text="@{person.weight}"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Edad"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvNames"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/etDireccion"
+        android:inputType="textPersonName"
+        android:text="@{person.address}"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGender"
+        app:layout_constraintEnd_toEndOf="@+id/etSurnames"
+        app:layout_constraintStart_toStartOf="@+id/etSurnames"
+        app:layout_constraintTop_toTopOf="@+id/tvAddress"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="99dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin_strat"
+        android:layout_marginTop="139dp"
+        android:layout_marginBottom="138dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNames"
+        app:layout_constraintVertical_bias="0.006"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Ciudad"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/spinner3"
+        app:layout_constraintTop_toBottomOf="@+id/etAge"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Género"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="47dp"
+        android:text="M"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="@+id/etAddress"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/etNames"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="52dp"
+        android:text="F"
+        app:layout_constraintEnd_toEndOf="@+id/etSurnames"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etAge"
+        app:layout_constraintTop_toTopOf="@+id/tvGender"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="164dp"
+        android:text="Ingles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="256dp"
+        android:text="Lenguaje"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_strat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:text="Español"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBox5"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="33dp"
+        android:text="Francés"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Peso"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etWeight"
+        app:layout_constraintStart_toStartOf="@+id/etWeight"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:onClick="Guardar"
+        android:text="Guardar"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
